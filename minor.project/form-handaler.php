@@ -1,17 +1,14 @@
 <?php
-$name  =$_POST['name'];
+$name=$_POST['name'];
+$visitor_email=$_POST['email']
+$subject=$_POST['subject']
+$message=$_POST['message']
 
-$visitor_email = $_POST['email'];
+$email_from='pioneerteclu09@gmail.com';
 
-$subject  = $_POST['subject'];
+$email_subject='new form submission';
 
-$message  = $_POST['message'];
-
-$email_from ='pioneerteclu09@gmaio.com';
-
-$email_subjact ='new form submission';
-
-$email_body ="user name: $name.\n".
+$email_body="user name: $name.\n".
             "user email: $visitor_email.\n".
             " subject: $subject.\n".
             "user message:$message";
@@ -24,8 +21,18 @@ $headers = "form:"$email_from \r\n";
 $headers .="reply-to: $visitor_email \r\n";
 
 
-mail( $to,$email_subjact,$email_body,$headers);
+mail( $to,$email_subject,$email_body,$headers);
 
 header("Location: contact.html");
+
+
+
+
+
+
+
+
+
+
 
 ?>
