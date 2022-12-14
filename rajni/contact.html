@@ -1,0 +1,136 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pioneer computer institute</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/980bca0b7b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+    
+</head>
+<body>
+    <section class="sub-header">
+<nav>
+    <a href="newform.html"><img src="logoo.jpeg" ></a>
+   
+    <div class="nav-link" id="navlinks">
+      
+        
+    <i class="fa-solid fa-rectangle-xmark" onclick="hidemenu()"></i>
+        
+        <ul> 
+            <li><a href="newform.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>    
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+
+            
+            </ul>
+    </div>
+
+
+    <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+
+</nav>
+   <h1>Contact Us</h1>
+       
+</section>
+
+      <!---------contact us-------->
+       <section class="location">
+
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14325.757185359713!2d83.6338802727297!3d26.149818996860382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3992290f7ed35e75%3A0xb1144128abf580c1!2sSipah%20Ibrahimabad%2C%20Uttar%20Pradesh%20276306!5e0!3m2!1sen!2sin!4v1670745348524!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+ </section>
+
+ <section class="contact-us">
+    <div class="row">
+        
+        <div class="contact-col">
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                    <h5>
+                        +919546789321
+                    </h5>
+                    <p>monday to saturday , 8 am to 5pm</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-house-chimney"></i>
+                <span>
+                    <h5>Pioneer Computer institute, Mau</h5>
+                    <p>Madhuban , Mau road</p>
+                </span>
+            </div>
+            <div>
+              <i class="fa-solid fa-envelope"></i>
+              <span>
+                <h5>pioneerteclu09@gmail.com</h5>
+                <p>Email us your Query</p>
+              </span>
+             </div>
+
+        </div>
+        <div class="contact-col">
+            <form action="form-handaler.php" method="post">
+                <input type="text" name="name" placeholder="Enter Your Name "required>
+                <input type="email" name="email"placeholder="Enter Your email address "required>
+                <input type="text" name="subjact" placeholder="Enter Your subject "required>
+                <textarea  rows="8" name="Message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red btn">Send Message</button>
+            </form> 
+
+        </div>
+
+    </div>
+
+ </section>
+
+
+
+
+
+
+
+      <!---------footer-------->
+
+
+      <section class="footer">
+    <h4>About Us </h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Cum pariatur earum labore quaerat ea iusto quia dolor aperiam error quisquam atque.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-youtube"></i> 
+    </div>
+    <p>Made With <i class="fa-regular fa-heart"></i> by easy tutorials </p> 
+
+</section>
+<!----------javascript for toggle menu----------->
+
+
+<script>
+         
+    var navlinks=document.getElementById("navlinks");
+
+    function showmenu() {
+       navlinks.style.right="0"
+       }
+       function hidemenu(){
+           navlinks.style.right="-200px";
+
+       }
+  
+</script>
+</body>
+</html>
